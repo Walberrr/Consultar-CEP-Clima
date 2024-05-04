@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP e Clima</title>
+    <link rel ="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Consultar CEP</h1>
+    <label>Digite o seu CEP:</label>
+    <input type="number" id="cep"/>
+    <button onclick= "consultaEndereço()" >Consultar</button>
+    <div id="resultadoCEP">
+        <p>Resultado da busca:</p>
+    </div>
+
+    <h1>Consultar clima</h1>
+    <label>Digite a sua cidade:</label>
+    <input type="text" id="cidade" placeholder="Exempo: Recife">
+    <button onclick="consultaClima()">Consultar</button>
+    <div id="resultadoClima">
+        <p>Resultado da busca:</p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
